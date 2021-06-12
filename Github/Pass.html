@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function check(){
+			var a=document.form.mcq.value;
+			var b=document.form.description.value;
+			var c=document.form.evidance.value;
+
+			var d=parseInt(a);
+			var e=parseInt(b);
+			var f=parseInt(c);
+			if(d>=80 && e>=60 && f>=60){
+				alert("You have passed")
+			}else{
+				alert("You have failed")
+			}
+			}
+		
+
+	</script>
+	<form name="form">
+		<label>MCQ:</label>
+		<input type="text" name="mcq"><br>
+		<label>Description: </label>
+		<input type="text" name="description"><br>
+		<label>Evidance: </label>
+		<input type="text" name="evidance"><br>
+		<input type="button" value="submit" onclick="check()">
+	</form>
+	
+</body>
+</html>

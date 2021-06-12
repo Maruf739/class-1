@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function myf(){
+			var a=document.form1.wr.value;
+			var b=document.form1.pra.value;
+			var c=document.form1.wr2.value;
+			var d=document.form1.pra2.value;
+
+
+			
+			var f=parseInt(a)+parseInt(b);
+			var g=(f*20)/100;
+
+			var h=parseInt(c)+parseInt(d)
+			var i=(h*80)/100;
+
+			var m=g+i
+
+			if(m>=60){
+				alert("Pass")
+			}else{
+				alert("Fail")
+			}
+
+		}
+	</script>
+
+	<fieldset style="width: 30%">
+	<form name="form1">
+		<h1>Midmonth Exam</h1>
+		<input type="text" name="wr" placeholder="External number">
+		<input type="text" name="pra" placeholder="Evidance"><br> <br>
+		
+		<h1>Monthly Exam</h1>
+		<input type="text" name="wr2" placeholder="External number">
+		<input type="text" name="pra2" placeholder="Evidance"><br> <br>
+		<input type="button" value="submit" onclick="myf()"><br><br>
+
+	</form>
+	</fieldset>
+	
+</body>
+</html>
